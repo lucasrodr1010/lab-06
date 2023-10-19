@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lab_06"
+			"path" : "lab_06.exe"
+		},
+		{
+			"path" : "lab_06.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fcolor-diagnostics"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -67,12 +70,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "lab_06",
-	"nameOnDisk" : "lab_06",
+	"nameOnDisk" : "lab_06.exe",
 	"paths" : 
 	{
 		"build" : ".",

@@ -8,9 +8,9 @@ unsigned char *Image::getImageData() {
     return imageData;
 }
 
-//unsigned char Image::getPixelData() {
-//
-//}
+unsigned char *Image::getPixelData() {
+   return imageData+2;
+}
 
 unsigned char Image::getWidth() {
     return imageData[0];

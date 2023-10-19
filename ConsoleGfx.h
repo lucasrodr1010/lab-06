@@ -10,12 +10,12 @@ class ConsoleGfx
 {
 public:
     // Framing (Windows / DOS mode)
-//    const char TOP = 205, TOP_LEFT = 201, TOP_RIGHT = 187, LEFT = 186,
-//               RIGHT = 186, BOTTOM = 205, BOTTOM_LEFT = 200, BOTTOM_RIGHT = 188, BLOCK = 223;
+    const char TOP = 205, TOP_LEFT = 201, TOP_RIGHT = 187, LEFT = 186,
+               RIGHT = 186, BOTTOM = 205, BOTTOM_LEFT = 200, BOTTOM_RIGHT = 188, BLOCK = 223;
 
 //     Framing (Unix mode)
-     const string TOP = "═", TOP_LEFT = "╔", TOP_RIGHT = "╗", LEFT = "║",
-                  RIGHT = "║", BOTTOM = "═", BOTTOM_LEFT = "╚", BOTTOM_RIGHT = "╝", BLOCK = "▀";
+//     const string TOP = "═", TOP_LEFT = "╔", TOP_RIGHT = "╗", LEFT = "║",
+//                  RIGHT = "║", BOTTOM = "═", BOTTOM_LEFT = "╚", BOTTOM_RIGHT = "╝", BLOCK = "▀";
 
     // Colors
     enum Color: uint8_t { BLACK = 0, RED, DARK_GREEN, GOLD, BLUE, GARNETT, ORANGE, LIGHT_GRAY,
